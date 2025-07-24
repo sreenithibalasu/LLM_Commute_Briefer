@@ -24,13 +24,22 @@ The entire workflow will be automated using **cron jobs**, allowing the briefing
 Good morning! ☀️ Here's your daily commute briefing:
 
 **Weather & What to Wear:**
-It's going to be a beautiful day! You'll enjoy clear skies in Menlo Park and just a few scattered clouds in South San Francisco. With temperatures ranging from the mid-50s to low-70s, I'd suggest layering - perhaps a light jacket or cardigan that you can easily remove as the day warms up. Perfect weather for your commute!
+It's going to be a beautiful day! You'll enjoy clear skies in Menlo Park and just a few 
+scattered clouds in South San Francisco. With temperatures ranging from the mid-50s to 
+low-70s, I'd suggest layering - perhaps a light jacket or cardigan that you can easily 
+remove as the day warms up. Perfect weather for your commute!
 
 **Commute Recommendation:**
-Great news - traffic looks light today! 🚗 Your 21.2-mile journey will take just 27-28 minutes regardless of when you leave. Since there's no traffic difference, you can leave whenever suits your schedule best between 8:00 AM and 11:00 AM. The slightly shorter 27-minute options start from 9:00 AM onwards if you prefer to avoid the earlier rush.
+Great news - traffic looks light today! 🚗 Your 21.2-mile journey will take just 27-28 
+minutes regardless of when you leave. Since there's no traffic difference, you can leave 
+whenever suits your schedule best between 8:00 AM and 11:00 AM. The slightly shorter 
+27-minute options start from 9:00 AM onwards if you prefer to avoid the earlier rush.
 
 **Battery Status:**
-Your Tesla is at 61% with an estimated range of 176 miles - more than enough for your round trip! Your commute will use about 11% of your battery (22% for the full round trip), leaving you with plenty of charge. No need to plug in before leaving, but you might want to charge tonight to start tomorrow with a fuller battery. 🔋
+Your Tesla is at 61% with an estimated range of 176 miles - more than enough for your 
+round trip! Your commute will use about 11% of your battery (22% for the full round trip), 
+leaving you with plenty of charge. No need to plug in before leaving, but you might want 
+to charge tonight to start tomorrow with a fuller battery. 🔋
 ```
 ---
 
