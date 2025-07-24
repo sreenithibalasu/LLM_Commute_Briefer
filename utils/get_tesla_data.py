@@ -5,15 +5,12 @@ import time
 from dotenv import load_dotenv
 
 # --- Configuration ---
-# Load environment variables from .env file
 load_dotenv()
 
 CLIENT_ID = os.getenv("TESLA_CLIENT_ID")
 CLIENT_SECRET = os.getenv("TESLA_CLIENT_SECRET")
-# This REDIRECT_URI must exactly match what you registered in Tesla Dev Portal
-# and used in the browser authorization URL.
-REDIRECT_URI = os.getenv("TESLA_REDIRECT_URI", "https://sreenithibalasu.github.io/callback.html")
-TESLA_REGION = os.getenv("TESLA_REGION", "na") # Default to "na" (North America) if not set
+REDIRECT_URI = os.getenv("TESLA_REDIRECT_URI")
+TESLA_REGION = os.getenv("TESLA_REGION", "na") # default region North America
 
 # Tesla API Endpoints
 AUTH_BASE_URL = "https://fleet-auth.prd.vn.cloud.tesla.com/oauth2/v3/token"
@@ -56,7 +53,6 @@ def refresh_access_token(current_refresh_token):
         'client_id': CLIENT_ID,
         'client_secret': CLIENT_SECRET,
         'refresh_token': current_refresh_token,
-        # Audience is the base URL of the Fleet API, without the /api/1 part
         'audience': API_BASE_URL.replace("/api/1", "") 
     }
     headers = {

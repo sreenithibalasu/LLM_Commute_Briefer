@@ -5,7 +5,10 @@ from email.mime.multipart import MIMEMultipart
 import os
 from datetime import datetime, timedelta
 
-# === CONFIGURATION ===
+from dotenv import load_dotenv
+
+load_dotenv()
+# -- Config --
 SMTP_SERVER = os.getenv("SMTP_SERVER")
 SMTP_PORT = os.getenv("SMTP_PORT")
 SENDER_EMAIL = os.getenv("SENDER_EMAIL")
@@ -19,7 +22,7 @@ def send_email():
 
 	decoded_text = data["claude_output"]
 
-	# === COMPOSE EMAIL ===
+	# -- Compose --
 	msg = MIMEMultipart("alternative")
 	dt = datetime.now() + timedelta(days=1)
 	formatted_date = dt.strftime("%B %d, %Y")
@@ -30,7 +33,7 @@ def send_email():
 	# Add plain text version
 	msg.attach(MIMEText(decoded_text, "plain"))
 
-	# === SEND EMAIL ===
+	# -- Send --
 	try:
 		with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT) as server:
 			server.login(SENDER_EMAIL, SENDER_PASSWORD)
