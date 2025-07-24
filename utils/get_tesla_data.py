@@ -28,12 +28,12 @@ def load_tokens():
         try:
             with open(TOKEN_FILE, 'r') as f:
                 tokens = json.load(f)
-                print(f"Tokens loaded from {TOKEN_FILE}.")
+                # print(f"Tokens loaded from {TOKEN_FILE}.")
                 return tokens
         except json.JSONDecodeError:
             print(f"Error decoding JSON from {TOKEN_FILE}. File might be corrupted.")
             return None
-    print(f"No tokens file found at {TOKEN_FILE}.")
+    print(f"No tokens file found.")
     return None
 
 def save_tokens(tokens):
@@ -41,9 +41,9 @@ def save_tokens(tokens):
     try:
         with open(TOKEN_FILE, 'w') as f:
             json.dump(tokens, f, indent=4)
-        print(f"Tokens saved to {TOKEN_FILE}.")
+        print(f"Tokens saved.")
     except IOError as e:
-        print(f"Error saving tokens to {TOKEN_FILE}: {e}")
+        print(f"Error saving tokens: {e}")
 
 def refresh_access_token(current_refresh_token):
     """Refreshes the access token using the refresh token."""
