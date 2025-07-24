@@ -17,7 +17,7 @@ AUTH_BASE_URL = "https://fleet-auth.prd.vn.cloud.tesla.com/oauth2/v3/token"
 API_BASE_URL = f"https://fleet-api.prd.{TESLA_REGION}.vn.cloud.tesla.com/api/1"
 
 # File to store current tokens (access_token, refresh_token, and their expiry time)
-TOKEN_FILE = "tesla_tokens.json"
+TOKEN_FILE = os.getenv("TOKEN_FILE")
 output_filename = os.getenv("PROMPT_INPUT_FILENAME")
 
 # --- Token Management Functions ---
