@@ -43,5 +43,8 @@ to charge tonight to start tomorrow with a fuller battery. 🔋
 ```
 ---
 
+## Coming Soon
+- API and set up instructions
+
 *This file will be updated regularly as the project progresses.*
 
