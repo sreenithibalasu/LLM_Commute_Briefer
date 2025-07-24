@@ -1,4 +1,4 @@
-# Work In Progress: Commute Briefer Automation
+# Work In Progress: LLM Powered Commute Briefer
 
 ## Project Purpose
 This project automates the creation of a personalized daily briefing that includes:
