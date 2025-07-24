@@ -31,7 +31,7 @@ def load_tokens():
                 # print(f"Tokens loaded from {TOKEN_FILE}.")
                 return tokens
         except json.JSONDecodeError:
-            print(f"Error decoding JSON from {TOKEN_FILE}. File might be corrupted.")
+            print(f"Error decoding JSON from. File might be corrupted.")
             return None
     print(f"No tokens file found.")
     return None
