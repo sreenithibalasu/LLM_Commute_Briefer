@@ -10,3 +10,4 @@ env/
 .DS_Store
 *.json
 *.pem
+*.txt
