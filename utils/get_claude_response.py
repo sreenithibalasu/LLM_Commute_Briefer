@@ -39,7 +39,7 @@ def call_claude_api():
 		data = json.load(f)
 		
 
-	weather = "Weather in Menlo Park: high of {}F and low of {} with description {}. Weather in South San Francisco: high of {}F and low of {} with description {}".format(data["weather_data"]["origin"]["min_temp"], data["weather_data"]["origin"]["max_temp"], data["weather_data"]["origin"]["description"],
+	weather = "Weather in {}: high of {}F and low of {} with description {}. Weather in {}: high of {}F and low of {} with description {}".format(os.getenv("ORIGIN_ADDRESS"), os.getenv("DEST_ADDRESS"), data["weather_data"]["origin"]["min_temp"], data["weather_data"]["origin"]["max_temp"], data["weather_data"]["origin"]["description"],
 	data["weather_data"]["destination"]["min_temp"], data["weather_data"]["destination"]["max_temp"], data["weather_data"]["destination"]["description"])
 	tesla = "{}% battery remaining. Charging state: {} . Estimated range: {} miles.".format(data["tesla_status"]["battery_level"],data["tesla_status"]["charge_state"], data["tesla_status"]["battery_range"] )
 	commute = "Commute Distance: {}, Minimum Battery Drainage: {}, Commute Options: {}".format(data["traffic_data"]["commute_distance"], data["traffic_data"]["minimum_battery_drainage"], data["traffic_data"]["commute_options"])
