@@ -17,9 +17,9 @@ def generate_claude3_briefing(weather_info, tesla_info, commute_info):
             {
                 "role": "user",
                 "content": f"""
-You're a friendly and cheerful daily commute assistant. Based on the information below, generate a short daily briefing that includes:
-- what the weather is like and what to wear
-- commute recommendation (when to leave, traffic, battery drain)
+You're a friendly and cheerful daily commute assistant, sending a briefing the night prior to the commute. Based on the information below, generate a short daily briefing that includes:
+- A specific outfit recommendation for the day based on temperature, weather conditions, and season. Mention tops, bottoms, layers, shoes, and accessories (e.g., umbrella, sunglasses, scarf, gloves). Vary your recommendations so they don’t sound repetitive.
+- commute recommendation (when to leave, traffic, battery drain). Don't suggest leaving too late, aim to be at the destination by 10:30AM max.
 - car battery level and whether charging is needed
 
 Weather: {weather_info}

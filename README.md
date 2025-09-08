@@ -1,4 +1,4 @@
-# Work In Progress: LLM Powered Commute Briefer
+# v1.1: LLM Powered Commute Briefer
 
 ## Project Purpose
 This project automates the creation of a personalized daily briefing that includes:
@@ -10,36 +10,36 @@ This project automates the creation of a personalized daily briefing that includ
 
 The goal is to streamline daily commute preparation by aggregating and summarizing relevant data into a single email.
 
-## Current Status
+## Current Status - Updated Sept 7, 2025
 - Successfully implemented API calls for Tesla, Weather, and Google Maps data
+- Route information includes freeways to take and distance per route. LLM presented with options for different departure times and route options
 - Integrated Anthropic Claude to generate the LLM-based response
 - Automated sending of the generated briefing email
 - Upcoming: Integrate Google Calendar functionality to personalize the briefing further based on the user's schedule
 
-## Automation - WIP
-The entire workflow will be automated using **cron jobs**, allowing the briefing to be generated and emailed at scheduled times daily without manual intervention.
+## Automation - Updated Sept 7, 2025
+The entire workflow is automated locally using **cron jobs**, allowing the briefing to be generated and emailed at scheduled times daily without manual intervention.
 
 ## Sample Output
 ```
 Good morning! ☀️ Here's your daily commute briefing:
 
 **Weather & What to Wear:**
-It's going to be a beautiful day! You'll enjoy clear skies in Menlo Park and just a few 
-scattered clouds in South San Francisco. With temperatures ranging from the mid-50s to 
-low-70s, I'd suggest layering - perhaps a light jacket or cardigan that you can easily 
-remove as the day warms up. Perfect weather for your commute!
+Tomorrow's looking lovely with temps reaching the low 80s! Perfect for early September. 
+I'd suggest pairing a breezy short-sleeve button-up or a lightweight cotton tee with 
+comfortable chinos or your favorite jeans. Since mornings will be in the low 60s,
+ grab a light cardigan or denim jacket for the drive - you can leave it in the car once you arrive. 
+ Slip on some breathable sneakers or loafers, and don't forget your sunglasses for that California sunshine!
 
 **Commute Recommendation:**
-Great news - traffic looks light today! 🚗 Your 21.2-mile journey will take just 27-28 
-minutes regardless of when you leave. Since there's no traffic difference, you can leave 
-whenever suits your schedule best between 8:00 AM and 11:00 AM. The slightly shorter 
-27-minute options start from 9:00 AM onwards if you prefer to avoid the earlier rush.
+I recommend leaving at 9:30 AM for the smoothest ride! You'll cruise up US-101 in just 34 minutes, 
+arriving by 10:04 AM with time to spare. Traffic looks pretty manageable tomorrow - the earlier slots 
+have slightly longer commute times, so sleeping in a bit actually works in your favor!
 
 **Battery Status:**
-Your Tesla is at 61% with an estimated range of 176 miles - more than enough for your 
-round trip! Your commute will use about 11% of your battery (22% for the full round trip), 
-leaving you with plenty of charge. No need to plug in before leaving, but you might want 
-to charge tonight to start tomorrow with a fuller battery. 🔋
+Your Tesla has 34% charge (97 miles range) - plenty for your 27-mile commute! You'll use about 14% battery 
+for the round trip, leaving you with roughly 20% by evening. I'd suggest plugging in tonight to start
+tomorrow with more cushion, especially if you have any errands planned after work.
 ```
 ---
 
